@@ -21,7 +21,7 @@ app.use(clerkMiddleware())
 app.use('/api/clerk' , clerkWebhooks)
 
 
-app.get('/', (req, res) => {res.send("API is working fine and better ")} );
+app.get('/', (req, res) => {res.send("API is working fine and better and finest .and...")} );
 
 // app.get("/test", (req, res) => {
 //   res.status(200).send("✅ API is working fine and better!");

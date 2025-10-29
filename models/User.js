@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
-    _id: { type: String, required: true },
-    username: { type: String, required: true },
-    email: { type: String, required: true },
-    image: { type: String, required: true },
+    clerkId: { type: String, required: true, unique: true },
+    username: { type: String },
+    email: { type: String, required: true},
+    image: { type: String },
     //we`ll get this image url from the CLERK
     role: { type: String, enum: ["user", "hotelOwner"], default: "user" },
     // whenevr the user create an account bydefault the role will be user.
